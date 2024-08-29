@@ -407,12 +407,57 @@ li > a:only-child:after {
   -ms-background-size: cover;
   background-size: cover;
   position: relative;
-  min-height: 50em;
+  /* min-height: 50em; */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 .layer {
-  min-height: 50em;
+  /* min-height: 50em; */
   background: rgba(0, 0, 0, 0.52);
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Ensures container grows to fill available space */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures columns wrap on smaller screens */
+  gap: 1rem; /* Adds spacing between columns */
+}
+
+.row.order-info {
+  display: flex;
+  justify-content: space-between; /* Ensures space between items */
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.middle,
+.middle-right {
+  flex: 1; /* Allows columns to grow equally */
+}
+
+.middle {
+  text-align: left;
+}
+
+.middle-right {
+  text-align: right;
+}
+
+.banner-bottom-wthree {
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0; /* Adjust padding if needed */
 }
 
 .banner-info-w3layouts {
@@ -459,6 +504,11 @@ a.read-more {
 
 .order-info {
   margin-top: 16em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem; /* Adjust padding if needed */
 }
 
 .middle ul.social li {
@@ -506,6 +556,9 @@ a.read-more {
 
 .ab-info {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 1rem; /* Adds spacing between columns */
 }
 
 .ab-info h4 {
@@ -536,6 +589,12 @@ a.read-more {
   font-family: "Oswald", sans-serif;
 }
 
+.ab-content {
+  flex: 1; /* Ensures items grow evenly */
+  display: flex;
+  flex-direction: column;
+}
+
 .ab-content img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -549,6 +608,10 @@ a.read-more {
 
 .ab-content-inner {
   padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .ab-info h5 {
@@ -623,6 +686,10 @@ a.read-more {
 
 .services {
   background: #c20d00;
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0; /* Adjust padding if needed */
 }
 
 h3.tittle,
@@ -895,6 +962,19 @@ ul.list-info-w3pvt li {
 }
 
 /*-- //testimonials --*/
+
+.mid-sec {
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0; /* Adjust padding if needed */
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .mid-sec img {
   background: #fff;
@@ -1271,6 +1351,10 @@ a.move-top span {
 
   .tab-wrap {
     padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .test-info {
@@ -1314,6 +1398,9 @@ a.move-top span {
   .tab-main {
     padding: 16px 0;
     width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }
 
   .test-info {
