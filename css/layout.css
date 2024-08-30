@@ -1,0 +1,134 @@
+/* layout.css */
+/* Hide Elements */
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+/* Flexbox Layouts */
+.middle,
+.middle-right {
+  flex: 1;
+}
+
+header {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.row.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation styles */
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul.menu {
+  margin-left: auto;
+  display: flex;
+  gap: 1em; /* Space between menu items */
+}
+
+nav ul li {
+  margin: 0px 0.3em;
+  display: inline-block;
+  float: left;
+}
+
+nav ul.menu {
+  margin: 0 auto 0 0; /* Adjust to align with logo */
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+nav ul.menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  padding: 0.5em 1.5em;
+  background: transparent;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.menu li.active a {
+  color: #ffc80a;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  padding: 10px;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+  margin: 0;
+}
+
+nav ul.menu li ul li a {
+  color: #333;
+  padding: 5px 10px;
+  display: block;
+}
+
+nav ul.menu li ul li a:hover {
+  color: #ffc107;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:only-child:after {
+  content: "";
+}

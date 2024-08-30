@@ -1,0 +1,94 @@
+/* components.css */
+.logo-img {
+  width: 82px;
+  height: 87px;
+  object-fit: cover;
+}
+
+.banner-info-w3layouts h3 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.banner-info-w3layouts h6 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fcd000;
+  font-family: "Pacifico", cursive;
+}
+
+a.read-more {
+  background: #c20d00;
+  color: #fff;
+  padding: 0.8em 3em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+  display: inline-block;
+  transition: all 500ms ease;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.read-more {
+  margin-top: 1.2em;
+}
+
+.pop-overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+}
+
+.pop-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  margin: 8em auto;
+  padding: 3em 1em;
+}
+
+.popup p {
+  font-size: 15px;
+  color: #666;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.popup .close:hover {
+  color: #30c39e;
+}

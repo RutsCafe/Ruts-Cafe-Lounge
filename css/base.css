@@ -1,0 +1,63 @@
+/* base.css */
+/* CSS Variables */
+:root {
+  --main-bg-color: #f7f7f7;
+  --text-color: #fff;
+  --highlight-color: #ffc80a;
+  --font-color-dark: #272525;
+  --font-color-light: #5a646b;
+  --border-color: rgba(255, 255, 255, 0.14);
+  --hover-opacity: 0.8;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 100%;
+  background: #fff;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 0.9em;
+  color: #2e2e2e;
+  line-height: 1.9em;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+  transition: 0.5s all;
+  font-family: "Oswald", sans-serif;
+}

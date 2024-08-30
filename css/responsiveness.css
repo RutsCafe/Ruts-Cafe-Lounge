@@ -1,0 +1,176 @@
+/* responsive.css */
+@media all and (max-width: 991px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav a {
+    color: #333;
+  }
+
+  .toggle + a,
+  .menu {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    padding: 6px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #1b1d1d;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer !important;
+  }
+
+  .menu .toggle {
+    float: none;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    padding: 5px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .toggle:hover {
+    color: #333;
+    background-color: #fff;
+  }
+
+  [id^="drop"]:checked + ul {
+    display: block;
+    background: #fff;
+    padding: 15px 0;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul.menu li a {
+    color: #312f2f;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #312f2f;
+    font-size: 15px;
+  }
+
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+  }
+
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  .login-icon {
+    text-align: right;
+  }
+
+  .login-icon span {
+    margin-right: 1em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .tab-wrap {
+    padding: 2em 0em;
+  }
+
+  form#contactform1 {
+    margin-bottom: 3em;
+    padding: 0 0 3em 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .banner-info-w3layouts {
+    padding-top: 13em;
+  }
+
+  .main-content,
+  .layer {
+    min-height: 34em;
+  }
+
+  .order-info {
+    margin-top: 6em;
+  }
+
+  .content-left-bottom {
+    margin-top: 0em;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  h3.tittle,
+  h3.tittle.two {
+    font-size: 1.8em;
+  }
+
+  .tab-main label {
+    padding: 10px 30px;
+  }
+
+  h3.tittle.order {
+    font-size: 2em;
+  }
+
+  .footer-top-inner-w3ls {
+    padding: 1em 0em 1em 0em;
+  }
+
+  h3.w3pvt_title {
+    font-size: 1em;
+  }
+
+  .read-more {
+    margin-top: 1em;
+  }
+
+  .tab-main section {
+    padding: 2em 0 2em 0;
+  }
+}
