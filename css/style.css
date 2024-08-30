@@ -87,6 +87,14 @@ header {
 nav {
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 #logo a {
