@@ -160,6 +160,11 @@
   background: var(--highlight-color); /* Background color of the section */
   padding-bottom: 5rem;
   padding-top: 5rem; /* Adjust for smaller screens */
+  min-height: 100vh; /* Ensure the section takes the full viewport height */
+  display: flex; /* Use flexbox to align content */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Ensure content stacks vertically */
 }
 
 .order-sec.pb-5 {
@@ -264,15 +269,20 @@ a.read-more:hover {
 .testimonials {
   background: url(../images/banner3.jpg) center no-repeat;
   background-size: cover;
-  min-height: 28em;
   position: relative;
+  min-height: 100vh; /* Ensure the section takes the full viewport height */
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Ensure content stacks vertically */
 }
 
 .layer.footer {
-  background: rgba(0, 0, 0, 0.82); /* Dark overlay for readability */
-  min-height: 28em;
-  display: flex;
-  align-items: center; /* Center content vertically */
+  background: rgba(0, 0, 0, 0.82);
+  min-height: 100vh; /* Ensure the layer takes the full viewport height */
+  display: flex; /* Use flexbox to align content */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Ensure content stacks vertically */
 }
 
 .test-info {
@@ -460,4 +470,38 @@ form#contactform1 {
   border-bottom: 1px solid #ddd;
   margin-bottom: 5em;
   padding: 0 0 5em 0;
+}
+
+/* Gallery Section */
+section#gallery {
+  position: relative;
+  min-height: 100vh; /* Ensure the section takes the full viewport height */
+  display: flex; /* Use flexbox to align content */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  flex-direction: column; /* Ensure content stacks vertically */
+}
+
+.gallery-wrap {
+  width: 100%; /* Ensure the gallery takes full width */
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap */
+  justify-content: center; /* Center the images */
+}
+
+.gal-img {
+  padding: 10px;
+  margin: 0 auto; /* Center each gallery item */
+}
+
+.header {
+  margin-bottom: 3rem; /* Adjust spacing below the header */
+  text-align: center;
+}
+
+.tittle {
+  font-size: 2.3em;
+  color: #c20d00;
+  font-weight: 600;
+  text-align: center;
 }
