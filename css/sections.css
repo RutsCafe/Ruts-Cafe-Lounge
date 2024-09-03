@@ -83,7 +83,47 @@
   letter-spacing: 3px;
 }
 
-/* Services */
+/* Services Section */
+/* Scale image on hover */
+.ab-content-inner img {
+  transition: transform 0.3s ease;
+}
+
+.ab-content-inner:hover img {
+  transform: scale(1.1);
+}
+
+/* Change background color on hover */
+.ab-content-inner {
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.services .row.ab-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  gap: 20px; /* Adjust the gap between the grid items as needed */
+}
+
+@media (max-width: 992px) {
+  .services .row.ab-info {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .services .row.ab-info {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .services .row.ab-info {
+    grid-template-columns: 1fr; /* 1 column for the smallest screens */
+  }
+}
+
 .services {
   background: #c20d00;
   min-height: 100vh;
@@ -492,6 +532,55 @@ section#gallery {
 .gal-img {
   padding: 10px;
   margin: 0 auto; /* Center each gallery item */
+}
+
+.popup {
+  position: relative;
+  /* Other styles for popup */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  color: white; /* Arrow color */
+  border: none;
+  border-radius: 50%; /* Circular background */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+  z-index: 10; /* Ensure arrows are above the image */
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.prev {
+  left: 10px; /* Position left arrow */
+}
+
+.next {
+  right: 10px; /* Position right arrow */
+}
+
+.prev:focus,
+.next:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add custom focus outline */
+}
+
+.prev i,
+.next i {
+  font-size: 20px; /* Adjust icon size */
 }
 
 .header {
