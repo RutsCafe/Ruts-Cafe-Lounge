@@ -724,3 +724,140 @@ nav.scrolled .logo-img {
     z-index: 1000; /* Ensure dropdown is above other content */
   }
 }
+
+/* About Section Styles */
+.banner-bottom-wthree {
+  padding: 5rem 0; /* Adjust padding as needed */
+  background-color: #f7f7f7; /* Light background color */
+}
+
+.content-left-bottom {
+  text-align: left; /* Align content to the left */
+}
+
+.content-left-bottom h4 {
+  font-size: 2.5em; /* Adjust font size for the heading */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 1rem; /* Add spacing below the heading */
+}
+
+.content-left-bottom p {
+  font-size: 1.1em; /* Adjust font size for paragraphs */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 2rem; /* Add spacing below the paragraphs */
+}
+
+.content-left-bottom h5 {
+  font-size: 1.5em; /* Adjust font size for subheadings */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 1rem; /* Add spacing below the subheading */
+}
+
+.content-left-bottom ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.content-left-bottom li {
+  font-size: 1.1em; /* Adjust font size for list items */
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+}
+
+.content-left-bottom li strong {
+  color: #c20d00; /* Change color for strong text */
+}
+
+.content-right-bottom img {
+  max-width: 100%; /* Ensure image fits within its container */
+  height: auto; /* Maintain aspect ratio of the image */
+}
+
+@media (max-width: 768px) {
+  .content-left-bottom h4 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  .content-left-bottom p,
+  .content-left-bottom li {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Services Section Styles */
+.services {
+  padding: 5rem 0; /* Vertical padding for the section */
+  background-color: #f7f7f7; /* Light background color */
+}
+
+.header {
+  text-align: center; /* Center the header text */
+  margin-bottom: 3rem; /* Space below the header */
+}
+
+.header .tittle {
+  font-size: 2.5em; /* Large font size for the title */
+  font-weight: 600; /* Bold font weight */
+  color: #c20d00; /* Color for the title */
+}
+
+.row.ab-info {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Space out items evenly */
+}
+
+.ab-content {
+  margin-bottom: 2rem; /* Space below each service item */
+  position: relative; /* Position relative for absolute children */
+  overflow: hidden; /* Hide overflow for images */
+}
+
+.ab-content-inner {
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.ab-content-inner img {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.ab-content-inner:hover img {
+  transform: scale(1.05); /* Scale image on hover */
+}
+
+.ab-info-con {
+  padding: 1rem; /* Padding for the text container */
+  text-align: center; /* Center align text */
+  background-color: #ffffff; /* White background for text */
+  border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+}
+
+.ab-info-con h4 {
+  font-size: 1.5em; /* Font size for dish names */
+  margin: 0.5rem 0; /* Margin for spacing */
+  color: #333; /* Dark color for dish names */
+}
+
+.ab-info-con p {
+  font-size: 1.2em; /* Font size for prices */
+  color: #c20d00; /* Color for prices */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .tittle {
+    font-size: 2em; /* Adjust title size for smaller screens */
+  }
+
+  .ab-info-con h4 {
+    font-size: 1.3em; /* Adjust dish name size for smaller screens */
+  }
+
+  .ab-info-con p {
+    font-size: 1em; /* Adjust price size for smaller screens */
+  }
+}
