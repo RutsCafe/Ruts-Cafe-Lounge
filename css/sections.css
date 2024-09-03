@@ -43,7 +43,6 @@
 
 /* Order Info Section */
 .order-info {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
   padding: 1rem; /* Padding for spacing */
   display: flex; /* Use flexbox to align content */
   justify-content: space-between; /* Align items to the left and right */
@@ -607,4 +606,121 @@ section#gallery {
 
 .w3ls-icons a:hover {
   color: #ffc80a; /* Change color on hover */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: transparent; /* Initial transparent background */
+  height: 80px; /* Initial height */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Fix the navigation bar to the top */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Scrolled Navigation Styles */
+nav.scrolled {
+  height: 60px; /* Reduced height when scrolled */
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly darker background */
+}
+
+/* Logo Styles */
+#logo {
+  flex: 1; /* Allow the logo to take available space */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the logo vertically */
+}
+
+.logo-img {
+  max-height: 80px; /* Initial logo height */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition for height and opacity */
+  width: auto;
+}
+
+/* Scrolled Logo Styles */
+nav.scrolled .logo-img {
+  max-height: 40px; /* Reduced logo height when scrolled */
+  opacity: 0.7; /* Fade out effect */
+}
+
+/* Menu Styles */
+.menu {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Align menu items horizontally */
+  margin-left: auto; /* Push menu to the right */
+}
+
+.menu li {
+  position: relative; /* Position for dropdowns */
+  margin: 0 1.5rem; /* Space between menu items */
+}
+
+.menu a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color */
+  font-weight: 600; /* Bold font weight */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu a:hover {
+  color: #c20d00; /* Change color on hover */
+}
+
+/* Dropdown Menu */
+.inner-ul {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position dropdown relative to parent */
+  top: 100%; /* Position below the parent */
+  left: 0; /* Align to the left */
+  background: rgba(255, 255, 255, 0.95); /* Light background for dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
+  z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+.menu li:hover .inner-ul {
+  display: block; /* Show dropdown on hover */
+}
+
+.inner-ul li {
+  margin: 0; /* Remove margin for dropdown items */
+}
+
+.inner-ul a {
+  padding: 0.5rem 1rem; /* Padding for dropdown items */
+  color: #333; /* Dark text color */
+  display: block; /* Make dropdown items block elements */
+}
+
+.inner-ul a:hover {
+  background-color: #c20d00; /* Change background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu on smaller screens */
+  }
+
+  .label {
+    display: block; /* Show toggle label for smaller screens */
+    cursor: pointer; /* Change cursor to pointer */
+    color: #333; /* Dark text color */
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: flex; /* Show menu when checkbox is checked */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background: rgba(255, 255, 255, 0.95); /* Light background for dropdown */
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
 }

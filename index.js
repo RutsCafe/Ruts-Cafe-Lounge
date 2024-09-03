@@ -30,3 +30,14 @@ function navigateTo(galleryId) {
         newPopup.classList.add('animate');
     }
 }
+
+// JavaScript to handle scroll event
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('nav');
+
+    if (window.scrollY > 50) { // Change '50' to the scroll distance you want
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
