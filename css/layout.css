@@ -41,7 +41,18 @@ nav {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: flex-start; /* Align items to the start of the row */
+}
+
+.banner-bottom-wthree .col-md-6:last-child {
+  display: flex;
+  justify-content: flex-end; /* Aligns the content to the right */
+  align-items: center; /* Centers the image vertically */
+}
+
+.banner-bottom-wthree img {
+  max-width: 100%; /* Ensures the image does not overflow */
+  height: auto; /* Maintains aspect ratio */
 }
 
 .row.order-info {
