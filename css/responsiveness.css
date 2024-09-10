@@ -1,4 +1,3 @@
-/* Responsive Styles for all devices */
 @media all and (max-width: 991px) {
   #logo {
     display: block;
@@ -7,20 +6,16 @@
     text-align: center;
     float: none;
   }
-
   nav {
     margin: 0;
   }
-
   nav a {
     color: #333;
   }
-
-  .toggle + a,
-  .menu {
+  .menu,
+  .toggle + a {
     display: none;
   }
-
   .toggle {
     display: block;
     padding: 6px 15px;
@@ -31,23 +26,20 @@
     font-weight: 600;
     cursor: pointer !important;
   }
-
   .menu .toggle {
     float: none;
     text-align: center;
     margin: auto;
     width: 30%;
     padding: 5px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 1px;
   }
-
   .toggle:hover {
     color: #333;
     background-color: #fff;
   }
-
   [id^="drop"]:checked + ul {
     display: block;
     background: #fff;
@@ -56,124 +48,98 @@
     width: 80%;
     margin: 0 auto;
   }
-
   nav ul li {
     display: block;
     width: 100%;
     padding: 5px 0;
   }
-
   nav ul ul a {
     padding: 0 40px;
   }
-
   nav ul.menu li a {
     color: #312f2f;
   }
-
   nav ul ul a {
     padding: 14px 20px;
     color: #312f2f;
     font-size: 15px;
   }
-
   nav ul ul {
     float: none;
     position: static;
-    color: #ffffff;
+    color: #fff;
   }
-
   nav ul li:hover > ul {
     display: none;
   }
-
   nav ul ul li {
     display: block;
     width: 100%;
     padding: 0;
   }
-
   nav ul li {
     margin: 0;
   }
 }
-
-/* Responsive Styles for tablets and small devices */
 @media (max-width: 768px) {
   .header .tittle {
-    font-size: 2em; /* Adjust title size for smaller screens */
+    font-size: 2em;
   }
-
   .ab-info-con h4 {
-    font-size: 1.3em; /* Adjust dish name size for smaller screens */
+    font-size: 1.3em;
   }
-
   .ab-info-con p {
-    font-size: 1em; /* Adjust price size for smaller screens */
+    font-size: 1em;
   }
-
   .menu {
-    display: none; /* Hide menu on smaller screens */
+    display: none;
   }
-
   input[type="checkbox"]:checked ~ .menu {
-    display: flex; /* Show menu when checkbox is checked */
-    flex-direction: column; /* Stack items vertically */
-    position: absolute; /* Position dropdown */
-    top: 100%; /* Position below the nav */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    background: rgba(255, 255, 255, 0.95); /* Light background for dropdown */
-    z-index: 1000; /* Ensure dropdown is above other content */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
   }
 }
-
-/* Responsive Styles for very small devices */
 @media screen and (max-width: 736px) {
   .banner-info-w3layouts {
     padding-top: 13em;
   }
-
-  .main-content,
-  .layer {
+  .layer,
+  .main-content {
     min-height: 34em;
   }
-
   .order-info {
     margin-top: 6em;
   }
-
   .content-left-bottom {
-    margin-top: 0em;
+    margin-top: 0;
   }
 }
-
 @media screen and (max-width: 667px) {
   h3.tittle,
   h3.tittle.two {
     font-size: 1.8em;
   }
-
   .tab-main label {
     padding: 10px 30px;
   }
-
   h3.tittle.order {
     font-size: 2em;
   }
-
   .footer-top-inner-w3ls {
-    padding: 1em 0em 1em 0em;
+    padding: 1em 0 1em 0;
   }
-
   h3.w3pvt_title {
     font-size: 1em;
   }
-
   .read-more {
     margin-top: 1em;
   }
-
   .tab-main section {
     padding: 2em 0 2em 0;
   }

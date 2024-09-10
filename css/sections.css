@@ -1,37 +1,28 @@
-/* sections.css */
-
-/* Banner */
 .banner-info-w3layouts {
   padding-top: 20em;
   text-align: center;
 }
-
-/* Main Content */
 .main-content {
-  background: url(../images/banner.jpg) center no-repeat;
+  background: url(https://rutscafe.github.io/Ruts-Cafe-Lounge/images/banner.jpg)
+    center no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 .layer {
   background: rgba(0, 0, 0, 0.52);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
-/* Banner Bottom */
 .banner-bottom-wthree {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
 }
-
-/* Order Info */
 .order-info {
   margin-top: 16em;
   position: absolute;
@@ -40,20 +31,15 @@
   right: 0;
   padding: 1rem;
 }
-
-/* Phone Number */
 .order-info .middle-right h6 {
-  color: #ffffff; /* White color for phone number */
-  font-size: 1.2em; /* Increase font size */
-  font-weight: 600; /* Bold font weight */
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
 }
-
 .order-info .middle-right span {
-  color: #ffc80a; /* Yellow color for phone icon */
-  margin-right: 0.5rem; /* Space between icon and number */
+  color: #ffc80a;
+  margin-right: 0.5rem;
 }
-
-/* Services Section */
 .services {
   background: #c20d00;
   min-height: 100vh;
@@ -61,65 +47,52 @@
   flex-direction: column;
   padding: 5rem 0;
 }
-
 .services .row.ab-info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 @media (max-width: 992px) {
   .services .row.ab-info {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .services .row.ab-info {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 576px) {
   .services .row.ab-info {
     grid-template-columns: 1fr;
   }
 }
-
-/* Scale image on hover */
 .ab-content-inner img {
   transition: transform 0.3s ease;
 }
-
 .ab-content-inner:hover img {
   transform: scale(1.1);
 }
-
 .ab-content-inner {
   transition: background-color 0.3s ease;
   padding: 10px;
   border-radius: 5px;
 }
-
-/* Tab Main */
 .tab-main {
   padding: 40px 0;
   border: none;
-  background: transparent;
+  background: 0 0;
   box-shadow: none;
   width: 90%;
 }
-
 .tab-main section {
   display: none;
   padding: 4em 0 2em 0;
   border-top: 1px solid #ddd;
 }
-
 .tab-main input {
   display: none;
 }
-
 .tab-main label {
   display: inline-block;
   margin: 0;
@@ -131,25 +104,20 @@
   text-transform: uppercase;
   font-size: 0.9em;
 }
-
 .tab-main label:hover {
   color: #c20d00;
   cursor: pointer;
 }
-
 .tab-main input:checked + label {
   color: #ffc80a;
   background: #c20d00;
 }
-
 .tab-main #tab1:checked ~ #content1,
 .tab-main #tab2:checked ~ #content2,
 .tab-main #tab3:checked ~ #content3,
 .tab-main #tab4:checked ~ #content4 {
   display: block;
 }
-
-/* Order Section */
 .order-sec {
   background: var(--highlight-color);
   padding: 5rem 0;
@@ -159,55 +127,44 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .order-sec.pb-5 {
   padding-bottom: 5rem;
 }
-
 .order-sec.pt-md-0 {
   padding-top: 0;
 }
-
 .order-sec.pt-5 {
   padding-top: 5rem;
 }
-
 .test-info {
   text-align: center;
   padding: 2rem 0;
 }
-
 .tittle.order {
   font-size: 2.3em;
   color: #c20d00;
   font-weight: 600;
 }
-
 .tittle.order span {
   color: #26262b;
   display: block;
   font-size: 0.4em;
   letter-spacing: 4px;
 }
-
 .order-left-content {
   text-align: right;
 }
-
 .order-left-content h4 {
   font-size: 4em;
   font-weight: 600;
 }
-
 .order-right-content {
   text-align: left;
 }
-
 .tic-info {
   padding-left: 0;
   list-style: none;
 }
-
 .tic-info li {
   color: #a07d01;
   font-size: 0.9em;
@@ -216,30 +173,25 @@
   display: flex;
   align-items: center;
 }
-
 .tic-info li span {
   color: #c20d00;
   margin-right: 1rem;
 }
-
 @media (max-width: 768px) {
   .order-left-content,
   .order-right-content {
     text-align: center;
   }
-
   .order-left-content h4 {
     font-size: 3em;
   }
-
   .read-more {
     margin-top: 2rem;
   }
 }
-
-/* Testimonials Section */
 .testimonials {
-  background: url(../images/banner3.jpg) center no-repeat;
+  background: url(https://rutscafe.github.io/Ruts-Cafe-Lounge/images/banner3.jpg)
+    center no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100vh;
@@ -247,7 +199,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .layer.footer {
   background: #2c2c2f;
   min-height: 100vh;
@@ -256,44 +207,37 @@
   justify-content: center;
   flex-direction: column;
 }
-
 .test-info {
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   padding: 2rem 1rem;
 }
-
 .test-info h3 {
   font-size: 1.4em;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
   margin: 1rem 0;
 }
-
 ul.w3ls-icons.clients {
   display: inline-block;
   margin: 1rem 0;
   padding: 0;
   list-style: none;
 }
-
 ul.w3ls-icons.clients li {
   display: inline-block;
   margin: 0 0.2em;
 }
-
 ul.w3ls-icons.clients li a {
-  color: #ffc80a; /* Star color */
+  color: #ffc80a;
   font-size: 1.2em;
 }
-
 ul.w3ls-icons.clients li a span:hover {
   opacity: 0.8;
   transition: 0.3s ease-in-out;
 }
-
 .test-info p {
   color: #fff;
   font-size: 1em;
@@ -302,31 +246,22 @@ ul.w3ls-icons.clients li a span:hover {
   margin-top: 1rem;
   position: relative;
 }
-
 .test-info p span.fa {
   color: #ffc80a;
   font-size: 1.2em;
   margin: 0 0.5em;
 }
-
 @media (max-width: 768px) {
   .test-info h3 {
     font-size: 1.2em;
   }
-
   .test-info p {
     font-size: 0.9em;
   }
-
   ul.w3ls-icons.clients li a {
-    font-size: 1em; /* Adjust star size for smaller screens */
+    font-size: 1em;
   }
 }
-
-/* Contact Form */
-
-/* Contact Address */
-
 .adress-info h6 {
   font-size: 1em;
   color: #17202a;
@@ -335,13 +270,11 @@ ul.w3ls-icons.clients li a span:hover {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
 .adress-info span {
   color: #46484c;
   font-size: 2em;
   vertical-align: middle;
 }
-
 .adress-info a,
 .adress-info p {
   color: #5a646b;
@@ -349,65 +282,52 @@ ul.w3ls-icons.clients li a span:hover {
   line-height: 1.9em;
   margin: 0;
 }
-
 .adress-info a {
   font-size: 0.85em;
 }
-
 .w3ls-icons {
-  padding: 0; /* Remove default padding */
-  list-style: none; /* Remove bullet points */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
-
 .w3ls-icons li {
-  display: inline-block; /* Align icons horizontally */
-  margin: 0 1em; /* Space between icons */
+  display: inline-block;
+  margin: 0 1em;
 }
-
 .w3ls-icons a {
-  color: #ffffff; /* White color for icons */
-  font-size: 1.5em; /* Increase icon size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
 }
-
 .w3ls-icons a:hover {
-  color: #ffc80a; /* Change color on hover */
+  color: #ffc80a;
 }
-
-/* About Section Styles */
 .banner-bottom-wthree {
-  padding: 5rem 0; /* Adjust padding as needed */
-  background-color: #f7f7f7; /* Light background color */
+  padding: 5rem 0;
+  background-color: #f7f7f7;
 }
-
 .content-left-bottom {
-  text-align: left; /* Align content to the left */
+  text-align: left;
 }
-
 .content-left-bottom p {
-  font-size: 1.1em; /* Adjust font size for paragraphs */
-  line-height: 1.8; /* Increase line height for readability */
-  margin-bottom: 2rem; /* Add spacing below the paragraphs */
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
-
 .content-left-bottom ul {
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Remove default padding */
+  list-style-type: none;
+  padding-left: 0;
 }
-
 .content-left-bottom li {
-  font-size: 1.1em; /* Adjust font size for list items */
-  margin-bottom: 0.5rem; /* Add spacing between list items */
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
 }
-
 .content-left-bottom li strong {
-  color: #c20d00; /* Change color for strong text */
+  color: #c20d00;
 }
-
 @media (max-width: 768px) {
-  .content-left-bottom p,
-  .content-left-bottom li {
-    font-size: 1em; /* Adjust font size for smaller screens */
+  .content-left-bottom li,
+  .content-left-bottom p {
+    font-size: 1em;
   }
 }
