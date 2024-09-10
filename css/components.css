@@ -92,3 +92,160 @@ a.read-more {
 .popup .close:hover {
   color: #30c39e;
 }
+
+/* Order Info Section */
+.order-info {
+  padding: 1rem; /* Padding for spacing */
+  display: flex; /* Use flexbox to align content */
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Center items vertically */
+}
+
+/* Social Media Icons */
+.order-info .social {
+  display: flex; /* Use flexbox to align icons horizontally */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.order-info .social li {
+  margin-right: 1rem; /* Space between icons */
+}
+
+.order-info .social a {
+  color: #ffffff; /* White color for icons */
+  font-size: 1.2em; /* Increase icon size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.order-info .social a:hover {
+  color: #ffc80a; /* Change color on hover */
+}
+
+/* Read More Button */
+.read-more {
+  margin-top: 3rem;
+}
+
+a.read-more {
+  background: #c20d00;
+  color: #fff;
+  padding: 0.8em 3em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+  display: inline-block;
+  transition: all 500ms ease;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+a.read-more:hover {
+  opacity: var(--hover-opacity);
+}
+.contact-form .form-control {
+  padding: 0.9em;
+  color: #495057;
+  border: 2px solid #d2d6da;
+  border-radius: 0px;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.contact-form label {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #1c2833;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact-form button.btn {
+  background: #c20d00;
+  padding: 15px 25px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fff;
+  border-radius: 0px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s all;
+  border: transparent;
+  width: 100%;
+}
+
+.contact-form button.btn:hover {
+  opacity: 0.8;
+}
+/* Gallery Section */
+section#gallery {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gal-img {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.popup {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 10;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:focus,
+.next:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.prev i,
+.next i {
+  font-size: 20px;
+}

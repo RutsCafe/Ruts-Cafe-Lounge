@@ -174,3 +174,42 @@
     padding: 2em 0 2em 0;
   }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .tittle {
+    font-size: 2em; /* Adjust title size for smaller screens */
+  }
+
+  .ab-info-con h4 {
+    font-size: 1.3em; /* Adjust dish name size for smaller screens */
+  }
+
+  .ab-info-con p {
+    font-size: 1em; /* Adjust price size for smaller screens */
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Hide menu on smaller screens */
+  }
+
+  .label {
+    display: block; /* Show toggle label for smaller screens */
+    cursor: pointer; /* Change cursor to pointer */
+    color: #333; /* Dark text color */
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: flex; /* Show menu when checkbox is checked */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background: rgba(255, 255, 255, 0.95); /* Light background for dropdown */
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
+}
