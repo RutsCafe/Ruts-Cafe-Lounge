@@ -41,3 +41,13 @@ window.addEventListener('scroll', function () {
         nav.classList.remove('scrolled');
     }
 });
+
+document.querySelectorAll('.tab-label').forEach(label => {
+    label.addEventListener('click', () => {
+        document.querySelectorAll('.tab-content .tab-section').forEach(section => {
+            section.style.display = 'none';
+        });
+        document.querySelector(`#${label.getAttribute('for')}`).checked = true;
+        document.querySelector(`#${label.getAttribute('for')}`).nextElementSibling.style.display = 'block';
+    });
+});
