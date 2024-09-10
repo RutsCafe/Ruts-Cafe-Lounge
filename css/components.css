@@ -1,10 +1,13 @@
-/* components.css */
+/* Components Styles */
+
+/* Logo */
 .logo-img {
   width: 82px;
   height: 87px;
   object-fit: cover;
 }
 
+/* Banner Info */
 .banner-info-w3layouts h3 {
   font-size: 1.2em;
   font-weight: 300;
@@ -14,14 +17,7 @@
   letter-spacing: 7px;
 }
 
-.banner-info-w3layouts h6 {
-  font-size: 2em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #fcd000;
-  font-family: "Pacifico", cursive;
-}
-
+/* Read More Button */
 a.read-more {
   background: #c20d00;
   color: #fff;
@@ -35,13 +31,18 @@ a.read-more {
   letter-spacing: 2px;
 }
 
-.read-more {
-  margin-top: 1.2em;
+a.read-more:hover {
+  opacity: var(--hover-opacity);
 }
 
+.read-more {
+  margin-top: 3rem;
+}
+
+/* Popup */
 .pop-overlay {
   position: absolute;
-  top: 0px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -66,18 +67,6 @@ a.read-more {
   padding: 3em 1em;
 }
 
-.popup p {
-  font-size: 15px;
-  color: #666;
-  letter-spacing: 0.5px;
-  line-height: 30px;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #fff;
-}
-
 .popup .close {
   position: absolute;
   top: 5px;
@@ -95,55 +84,34 @@ a.read-more {
 
 /* Order Info Section */
 .order-info {
-  padding: 1rem; /* Padding for spacing */
-  display: flex; /* Use flexbox to align content */
-  justify-content: space-between; /* Align items to the left and right */
-  align-items: center; /* Center items vertically */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Social Media Icons */
 .order-info .social {
-  display: flex; /* Use flexbox to align icons horizontally */
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .order-info .social li {
-  margin-right: 1rem; /* Space between icons */
+  margin-right: 1rem;
 }
 
 .order-info .social a {
-  color: #ffffff; /* White color for icons */
-  font-size: 1.2em; /* Increase icon size */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #ffffff;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
 }
 
 .order-info .social a:hover {
-  color: #ffc80a; /* Change color on hover */
+  color: #ffc80a;
 }
 
-/* Read More Button */
-.read-more {
-  margin-top: 3rem;
-}
-
-a.read-more {
-  background: #c20d00;
-  color: #fff;
-  padding: 0.8em 3em;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
-  font-size: 13px;
-  display: inline-block;
-  transition: all 500ms ease;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-a.read-more:hover {
-  opacity: var(--hover-opacity);
-}
+/* Contact Form */
 .contact-form .form-control {
   padding: 0.9em;
   color: #495057;
@@ -180,6 +148,7 @@ a.read-more:hover {
 .contact-form button.btn:hover {
   opacity: 0.8;
 }
+
 /* Gallery Section */
 section#gallery {
   position: relative;

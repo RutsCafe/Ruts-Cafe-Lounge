@@ -140,12 +140,6 @@ nav ul.menu li ul li a:hover {
   color: #ffc107;
 }
 
-nav ul ul ul li {
-  position: relative;
-  top: -60px;
-  left: 170px;
-}
-
 li > a:only-child:after {
   content: "";
 }
