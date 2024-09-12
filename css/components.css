@@ -139,6 +139,39 @@ section#gallery {
 .gal-img {
   padding: 10px;
   margin: 0 auto;
+  flex: 0 0 25%; /* Default to 4 images per row */
+  max-width: 25%;
+}
+@media (max-width: 767px) {
+  .gal-img {
+    flex: 0 0 50%; /* 2 images per row on small screens */
+    max-width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .gal-img {
+    flex: 0 0 100%; /* 1 image per row on extra small screens */
+    max-width: 100%;
+  }
+}
+.gal-img img {
+  width: 100%; /* Ensure images fill the container */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.gal-img:hover img {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+.caption {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fff; /* White text for contrast */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px; /* Rounded corners */
 }
 .popup {
   position: relative;
